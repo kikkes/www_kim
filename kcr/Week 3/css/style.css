@@ -1,0 +1,164 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #333333;
+	font-size: 16px;
+}
+
+#container {
+	background-color: white;
+	max-width: 640px;
+	height: 100%;
+	overflow: auto;
+	margin: 0 auto;
+	display: block;
+	padding: 5vh 25px 0 25px;
+	box-shadow: 0 0 20px black;
+}
+
+#site-title-cont {
+	padding: 10px;
+	margin: 0 auto 50px auto;
+	background-color: #E93F3C;
+	border-radius: 4px;
+	transform: skewY(4deg);
+	width: 250px;
+}
+
+#site-title {
+	font-size: 48px;
+	text-align: center;
+	font-family: 'Roboto Slab', sans-serif;
+	transform: skewY(-4deg);
+	color: white;
+	padding: 10px;
+}
+
+#title, #article {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	margin: 10px 0;
+	outline: none;
+	box-sizing: border-box;
+	border: none;
+}
+
+#logout {
+	display: block;
+	text-align: center;
+	margin-bottom: 25px;
+
+}
+
+#title {
+	font-size: 18px;
+	padding-left: 10px;
+	font-family: 'Roboto Slab', sans-serif;
+	border-bottom: 1px solid lightgray;
+}
+
+#article {
+	font-size: 16px;
+	resize: none;
+	line-height: 1.5;
+	height: 200px;
+	padding: 0 10px;
+	border: 1px solid lightgray;
+	border-radius: 2px;
+}
+
+button {
+	font-size: 20px;
+	width: 100px;
+	border: none;
+	padding: 10px 0;
+	border-radius: 2px;
+	float: right;
+}
+
+button:hover {
+	background-color: #C5C5C5;
+}
+
+button:active {
+	background-color: #C5C5C5;
+	box-shadow: inset 2px 2px 2px gray;
+}
+
+.post {
+	padding: 20px 10px;
+	clear: both;
+	margin: 10px 0;
+}
+
+h3 {
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 18px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid lightgray;
+}
+
+p {
+	line-height: 1.15;
+}
+
+/* LOGIN.PHP & SIGNUP.PHP*/
+
+#contLogin, #contSignUp {
+	background-color: white;
+	max-width: 640px;
+	height: 95vh;
+	margin: 0 auto;
+	display: block;
+	padding: 5vh 25px 0 25px;
+	box-shadow: 0 0 20px black;
+}
+
+#username, #password, #firstname,#name, #email {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	width: 100%;
+	margin: 10px auto;
+	display: block;
+	outline: none;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid lightgray;
+	border-radius: 2px;
+}
+
+h2 {
+	font-size: 32px;
+	font-family: 'Roboto Slab', sans-serif;
+	margin: 10px auto 25px auto;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+#btnLogin, #btnSignUp {
+	width: 100%;
+	border: none;
+	padding: 10px 0;
+	border-radius: 2px;
+	margin: 10px 0 20px 0;
+	font-size: 20px;
+}
+
+#btnLogin:hover, #btnSignUp:hover {
+	background-color: #C5C5C5;
+}
+
+#btnLogin:active, #btnSignUp:active {
+	background-color: #C5C5C5;
+	box-shadow: inset 2px 2px 2px gray;
+}
+
+#feedback {
+	color: #E93F3C;
+}
+
+
+
+
+

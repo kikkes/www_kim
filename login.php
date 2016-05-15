@@ -11,25 +11,29 @@ if (mysqli_connect_errno()) {
     exit();
 }
 
-$email = $_GET['email'];
-$password = $_GET['password'];
+$email = "kim@episeries.com";
+$password = "lol";
+
 $returnval = "false";
 /* Select queries return a resultset */
-$result = mysqli_query($link, "SELECT 'email','password' FROM 'users' WHERE email = '$email' AND password = '$password'");
-//printf("Select returned %d rows.\n", mysqli_num_rows($result));
-
-
-if( mysqli_num_rows($result) == 1) {
-	$returnval = "true";
-	echo json_encode($returnval);
+//$result = mysqli_query($link, "SELECT 'email','password' FROM 'users' WHERE email = '$email' AND password = '$password'");
+if ($result = mysqli_query($link, "SELECT 'email','password' FROM 'users' WHERE 'email' = '$email' AND 'password' = '$password'")) {
+    //printf("Select returned %d rows.\n", mysqli_num_rows($result));
+	$rows = array();
+		while($row = $result->fetch_array(MYSQLI_NUM)){
+		
+			$rows[] = $row[0];
+		}
+		//$rows = $result->fetch_array(MYSQLI_NUM);
+		
+		echo json_encode($rows, JSON_PRETTY_PRINT);
+		
+		
+		
+		
+    /* free result set */
+    mysqli_free_result($result);
 }
-else { echo json_encode($returnval);}
-			
-			
-	echo json_encode ($result);
-	
-
-
 
 
 
